@@ -1,0 +1,27 @@
+---
+:source:
+  :path: !binary |-
+    dGVzdA==
+  :file: !binary |-
+    dGVzdF9MZWRDb250cm9sLmM=
+:successes:
+- :test: test_LedControl_TurnLedOn_should_turn_on_GPIO_pin_1_when_turning_on_the_red_LED
+  :line: 13
+  :message: ''
+- :test: test_LedControl_TurnLedOn_should_turn_on_GPIO_pin_2_when_turning_on_the_blue_LED
+  :line: 22
+  :message: ''
+- :test: test_LedControl_TurnLedOff_should_turn_off_GPIO_pin_1_when_turning_off_the_red_LED
+  :line: 31
+  :message: ''
+- :test: test_LedControl_TurnLedOff_should_turn_off_GPIO_pin_2_when_turning_off_the_blue_LED
+  :line: 40
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 4
+  :passed: 4
+  :failed: 0
+  :ignored: 0
+:stdout: []

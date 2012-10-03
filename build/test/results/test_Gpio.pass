@@ -1,0 +1,39 @@
+---
+:source:
+  :path: !binary |-
+    dGVzdA==
+  :file: !binary |-
+    dGVzdF9HcGlvLmM=
+:successes:
+- :test: test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_0
+  :line: 15
+  :message: ''
+- :test: test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_1
+  :line: 24
+  :message: ''
+- :test: test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_7
+  :line: 33
+  :message: ''
+- :test: test_Gpio_SetPin_should_do_nothing_if_pin_number_is_greater_than_7
+  :line: 42
+  :message: ''
+- :test: test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_0
+  :line: 49
+  :message: ''
+- :test: test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_1
+  :line: 58
+  :message: ''
+- :test: test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_7
+  :line: 67
+  :message: ''
+- :test: test_Gpio_ClearPin_should_do_nothing_if_pin_number_is_greater_than_7
+  :line: 76
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 8
+  :passed: 8
+  :failed: 0
+  :ignored: 0
+:stdout: []

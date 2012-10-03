@@ -1,0 +1,637 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"task",
+				"task_cnt"
+			],
+			[
+				"nex",
+				"next_do_time"
+			],
+			[
+				"need",
+				"needs_more_time"
+			],
+			[
+				"init",
+				"init_func_t3"
+			],
+			[
+				"cal",
+				"callback_t2"
+			],
+			[
+				"init_fu",
+				"init_func_t2"
+			],
+			[
+				"idle",
+				"idle_calls"
+			],
+			[
+				"allo",
+				"allocated_tasks"
+			],
+			[
+				"call",
+				"callback_t1"
+			],
+			[
+				"ini",
+				"initialized"
+			],
+			[
+				"allta",
+				"all_tasks_initialized"
+			],
+			[
+				"pe",
+				"pending_tasks"
+			],
+			[
+				"TS_Tim",
+				"TS_Time_T"
+			],
+			[
+				"exe",
+				"executeTaskAndHandleResults"
+			],
+			[
+				"nee",
+				"needs_more_time"
+			],
+			[
+				"hi",
+				"TS_GetHighestPriorityTask"
+			],
+			[
+				"all",
+				"all_tasks_initialized"
+			],
+			[
+				"uint",
+				"uint8_t"
+			],
+			[
+				"s",
+				"s_TS_Callback"
+			],
+			[
+				"pri",
+				"priority"
+			],
+			[
+				"Tas",
+				"TS_Task_T"
+			],
+			[
+				"num",
+				"num_tasks"
+			],
+			[
+				"TS_T",
+				"TS_Task_T"
+			],
+			[
+				"p_firs",
+				"p_first_free_task"
+			],
+			[
+				"Vec",
+				"Vector_T"
+			],
+			[
+				"Ve",
+				"Vector_T"
+			],
+			[
+				"check",
+				"checkForCompletedCmd"
+			],
+			[
+				"p_",
+				"p_omr_uart"
+			],
+			[
+				"avail",
+				"available_dolls"
+			],
+			[
+				"uar",
+				"uart_tx_delay"
+			],
+			[
+				"uart_tx_d",
+				"uart_tx_delay_cnt"
+			],
+			[
+				"UART",
+				"UART1_RX_BFR"
+			],
+			[
+				"UART_BYTE",
+				"UART_BYTE_RECEIVED_BIT"
+			],
+			[
+				"current",
+				"currentCmd"
+			],
+			[
+				"UAR",
+				"UART1_CFG"
+			],
+			[
+				"byte",
+				"bytesSent"
+			],
+			[
+				"numB",
+				"numBytesToSend"
+			],
+			[
+				"str",
+				"strcmp"
+			],
+			[
+				"de",
+				"define"
+			],
+			[
+				"last",
+				"last_enabled_value"
+			],
+			[
+				"System",
+				"SystemInitialized"
+			],
+			[
+				"currentc",
+				"currentCmdIndex"
+			],
+			[
+				"brewe",
+				"brewery_node"
+			],
+			[
+				"brew",
+				"brewery_node"
+			],
+			[
+				"temporar",
+				"temporary_path"
+			],
+			[
+				"templ",
+				"template_data"
+			],
+			[
+				"param",
+				"paramHash"
+			],
+			[
+				"yml",
+				"ymlData"
+			],
+			[
+				"cmd",
+				"cmdSetName"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "test/test_LedControl.c",
+			"settings":
+			{
+				"buffer_size": 315,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ceedling/Ceedling.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"disb",
+				"Package Control: Disable Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jordanschaenzle/Dropbox/Projects/DemoProjects/CMockExample_EETimes/test/test_Gpio.c",
+		"/Users/jordanschaenzle/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/TestWebsite/app/controllers/application_controller.rb",
+		"/Applications/microchip/xc16/v1.10/support/dsPIC33E/inc/p33EP512MU814.inc",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/test/test_TS_TaskExecution.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TS_TaskExecution.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TS_TaskExecution.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TaskScheduler.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TaskScheduler.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TS_Types.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TS_Defines.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/project.yml",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TS_Timing.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TS_Timing.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TS_Priorities.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TS_Priorities.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/test/test_TaskScheduler.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TS_InitTasks.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/TS_InitTasks.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/src/untitled",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/swisswatch.rb",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/swisswatch.gemspec",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/SwissWatch.gemspec",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/README.md",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/Calcs.txt",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/SwissWatch/README.txt",
+		"/Users/jordanschaenzle/Dropbox/Projects/BeerMon",
+		"/Users/jordanschaenzle/Dropbox/Projects/BeerMobn",
+		"/Users/jordanschaenzle/Dropbox/Projects/JTSolutions/BeerMon/BeerMon.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/rig/src/visionSystem.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/rig/src/ErrHandling.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/rig/src/ErrHandling.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/rig/src/OMR.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/rig/src/OMR.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/rig/src/UartPer.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/ThrowTheSwitch/Ceedling/lib/DollSmuggler.cpp",
+		"/Users/jordanschaenzle/Dropbox/Projects/ThrowTheSwitch/Ceedling/lib/DollSmuggler.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/ThrowTheSwitch/Ceedling/examples/temp_sensor/rakefile.rb",
+		"/Users/jordanschaenzle/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/rig/src/uart.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/rig/src/visionSystem.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/MagicBoxTestRig.sublime-project",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/rig/project.yml",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/example/build",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/example/example.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/rig/src/build",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/rig/myLib.a",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/uart.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/uart.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/visionSystem.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/visionSystem.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/magicBoxTestRig.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/datasheet.txt",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/magicBoxTestRig.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/mission_statement.txt",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/.gitignore",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/example/example.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/MyWebsite/JTSite/config/database.yml",
+		"/Users/jordanschaenzle/Dropbox/Projects/MyWebsite/JTSite/Gemfile",
+		"/Users/jordanschaenzle/.ssh/id_rsa.pub",
+		"/Users/jordanschaenzle/Dropbox/Projects/MyWebsite/JTSite/.gitignore",
+		"/Users/jordanschaenzle/.ssh/id_rsa",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/build",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/myLib.a",
+		"/Users/jordanschaenzle/Dropbox/Projects/DemoProjects/RapidXmlCpp/build",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/magicBoxTextRig.h",
+		"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src/magicBoxTextRig.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/DemoProjects/ExploringObjectFiles/ExploringObjectFiles.c",
+		"/Users/jordanschaenzle/Dropbox/Projects/DemoProjects/ExploringObjectFiles/a.out",
+		"/Users/jordanschaenzle/Library/Mail Downloads/sb_cal_template.rb",
+		"/Users/jordanschaenzle/Dropbox/Projects/DemoProjects/thorTest/test.thor",
+		"/Users/jordanschaenzle/bin/subl",
+		"/Users/jordanschaenzle/Dropbox/Projects/DemoProjects/RapidXmlCpp/build.rb",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_dvo_files/lib/generate_dvo_files.rb",
+		"/Volumes/__znas1_Dept_Docs/Electrical_Software_Development/Restricted/Applications/TTPro/2011/Settings.txt",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/project.yml",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/DvoGenConsole/DvoGenConsole.lua",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_dvo_files/doc/generate_dvo_files_help.txt",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/DvoGenConsole/premake4.lua",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_la_dll_xml_defaults/lib/generate_la_dll_xml_defaults.rb",
+		"/Users/jordanschaenzle/Desktop/Rhino.Mocks-3.6-Build-20/Rhino.Mocks.xml",
+		"/Users/jordanschaenzle/Desktop/New DVO/CD391E_LA_DAS_VP2/Parse.rb",
+		"/Users/jordanschaenzle/Desktop/New DVO/CD391E_LA_DAS_VP2/Settings.xml",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_dvo_files/assets/DvoTemplate.yml",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_dvo_files/lib/cmdset_template_parser.rb",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_dvo_files/spec/cmdset_template_parser_spec.rb",
+		"/Users/jordanschaenzle/Desktop/New DVO/CD391E_LA_DAS_VP2/DvoTemplate.yml",
+		"/Users/jordanschaenzle/Desktop/DvoGenConsole.lua",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/deviceCommConsoleInStephensFolder/DvoGenConsole.lua",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/deviceCommConsoleInStephensFolder/premake4.lua",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/rakefile.rb",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_dvo_files/lib/Parse.rb",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Build/artifacts/dvo_xml_files/DVO_TuneableParametersMECD391C.xml",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/deviceCommConsoleInStephensFolder/.ZLockFile.txt",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/deviceCommConsoleInStephensFolder/devcommConsole4.lua",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_dvo_files/lib/doors_yml_data_matcher.rb",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_la_dll_xml_defaults/lib/doors_xml_matcher.rb",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_la_dll_xml_defaults/lib/doors_req_module_parser.rb",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_dvo_files/lib/doors_req_module_parser.rb",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_dvo_files/spec/doors_req_module_parser_spec.rb",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/Ford_IEC_CY12_Mobileye_trunk/Tools/ceedling/plugins/generate_dvo_files/lib/doors_defaults_extractor.rb",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/deviceCommConsoleInStephensFolder/BMW_L7.cmdset",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/deviceCommConsoleInStephensFolder/bin/test.xml",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/deviceCommConsoleInStephensFolder/test.xml",
+		"/Volumes/E/AstroDeviceCommon/AstroDeviceCommon - Copy/src/BiPolarStepper/StepperCurrent.c",
+		"/Volumes/E/AstroDeviceCommon/AstroDeviceCommon - Copy/test/BiPolarStepper/test_BiPolarStepper.c",
+		"/Volumes/E/AstroDeviceCommon/AstroDeviceCommon - Copy/include/Compiler.h",
+		"/Volumes/E/AstroDeviceCommon/AstroDeviceCommon - Copy/test/support/p24HJ128GP204_Test.c",
+		"/Volumes/E/AstroDeviceCommon/AstroDeviceCommon - Copy/src/BiPolarStepper/StepperCurrent.h",
+		"/Volumes/E/AstroDeviceCommon/AstroDeviceCommon - Copy/test/BiPolarStepper/test_StepperCurrent.c",
+		"/Volumes/C/Users/Jordan/ProjectsOnWin/Gentex/deviceCommConsoleInStephensFolder/main.cpp"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<project>",
+			"/Users/jordanschaenzle/Dropbox/Projects/MagicBoxTestRig/src",
+			"<Project>",
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"TS_IT_Initi",
+			"initialize",
+			"TS_TE_GetExpiredTaskList_E",
+			"_TS_TI_IsTaskDue",
+			"TS_TI_IsTaskDue",
+			"STATIC",
+			"();\n",
+			"allocated_tasks",
+			"STATIC",
+			"timespan",
+			"count",
+			"TS_Task_Params_T * args",
+			"t3_calls",
+			"s_TS_Task_Params_T",
+			"s_TS_Task_T",
+			"free_task_pool",
+			"short",
+			"incomingByteReady_UART1",
+			"processUartOps",
+			"Uart1_RX_BFR",
+			"sendByteUart",
+			"cmp)",
+			".o",
+			"long",
+			"		",
+			"-",
+			"date_sampled",
+			"-",
+			"<",
+			"doorsName:",
+			":doorsName",
+			":doorsName:",
+			"(^:doorsName)doorsName",
+			"parHash[:doorsName]",
+			"k_DIMON_Rt_LpALatAcc",
+			"das",
+			"devcommConsole",
+			"project",
+			"devcommConsole",
+			"artifacts_",
+			"  ",
+			"warnshiftoutstartmetersldw0",
+			"ayfact",
+			":defaultsInDoors: No",
+			"reset_parser",
+			"\\",
+			"}\"",
+			"gsub",
+			"puts",
+			")"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "test/test_LedControl.c",
+					"settings":
+					{
+						"buffer_size": 315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"tsinit",
+				"src/TS_InitTasks.c"
+			],
+			[
+				"tasksc",
+				"src/TaskScheduler.h"
+			],
+			[
+				".d",
+				"examples/temp_sensor/build/test/dependencies/Executor.d"
+			],
+			[
+				"project.ym",
+				"examples/temp_sensor/project.yml"
+			],
+			[
+				"",
+				"assets/project.yml"
+			],
+			[
+				"rakefile.rb",
+				"examples/temp_sensor/rakefile.rb"
+			],
+			[
+				"makefile.rb",
+				"lib/makefile.rb"
+			],
+			[
+				"rakewr",
+				"lib/rake_wrapper.rb"
+			],
+			[
+				"projec",
+				"assets/project.yml"
+			],
+			[
+				"default",
+				"lib/defaults.rb"
+			],
+			[
+				"defau.yml",
+				"plugins/bullseye/defaults.yml"
+			],
+			[
+				"depend",
+				"lib/dependinator.rb"
+			],
+			[
+				"vis",
+				"rig/src/visionSystem.c"
+			],
+			[
+				"generateladl",
+				"Tools/ceedling/plugins/generate_la_dll_xml_defaults/lib/generate_la_dll_xml_defaults.rb"
+			],
+			[
+				"templatepar",
+				"Tools/ceedling/plugins/generate_dvo_files/lib/cmdset_template_parser.rb"
+			],
+			[
+				"cmdset",
+				"Tools/ceedling/plugins/generate_dvo_files/lib/cmdset_template_parser.rb"
+			],
+			[
+				"rakefile",
+				"rakefile.rb"
+			],
+			[
+				"template.ym",
+				"Tools/ceedling/plugins/generate_dvo_files/assets/DvoTemplate.yml"
+			],
+			[
+				"generatela",
+				"Tools/ceedling/plugins/generate_la_dll_xml_defaults/lib/generate_la_dll_xml_defaults.rb"
+			],
+			[
+				"doorsxml",
+				"Tools/ceedling/plugins/generate_la_dll_xml_defaults/lib/doors_xml_matcher.rb"
+			],
+			[
+				"template.yml",
+				"Tools/ceedling/plugins/generate_dvo_files/assets/DvoTemplate.yml"
+			],
+			[
+				"templateparse",
+				"Tools/ceedling/plugins/generate_dvo_files/lib/cmdset_template_parser.rb"
+			],
+			[
+				"proje",
+				"project.yml"
+			],
+			[
+				"stepper",
+				"src/BiPolarStepper/StepperCurrent.h"
+			],
+			[
+				"test",
+				"test/BiPolarStepper/test_StepperCurrent.c"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true
+}
