@@ -23,7 +23,7 @@ void tearDown(void)
 
 
 
-void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_0(void)
+void test_GPIO_SetPin_should_set_the_correct_bit_in_PortA_for_pin_0(void)
 
 {
 
@@ -31,7 +31,7 @@ void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_0(void)
 
 
 
-    Gpio_SetPin(0U);
+    GPIO_SetPin(0U);
 
 
 
@@ -41,7 +41,7 @@ void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_0(void)
 
 
 
-void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_1(void)
+void test_GPIO_SetPin_should_set_the_correct_bit_in_PortA_for_pin_1(void)
 
 {
 
@@ -49,7 +49,7 @@ void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_1(void)
 
 
 
-    Gpio_SetPin(1U);
+    GPIO_SetPin(1U);
 
 
 
@@ -59,7 +59,7 @@ void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_1(void)
 
 
 
-void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_7(void)
+void test_GPIO_SetPin_should_set_the_correct_bit_in_PortA_for_pin_7(void)
 
 {
 
@@ -67,7 +67,7 @@ void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_7(void)
 
 
 
-    Gpio_SetPin(7U);
+    GPIO_SetPin(7U);
 
 
 
@@ -77,13 +77,13 @@ void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_7(void)
 
 
 
-void test_Gpio_SetPin_should_do_nothing_if_pin_number_is_greater_than_7()
+void test_GPIO_SetPin_should_do_nothing_if_pin_number_is_greater_than_7()
 
 {
 
     PortA = 0x00;
 
-    Gpio_SetPin(8U);
+    GPIO_SetPin(8U);
 
     UnityAssertEqualNumber((_U_SINT)((0x00)), (_U_SINT)((PortA)), (((void *)0)), (_U_UINT)46, UNITY_DISPLAY_STYLE_INT);
 
@@ -91,7 +91,7 @@ void test_Gpio_SetPin_should_do_nothing_if_pin_number_is_greater_than_7()
 
 
 
-void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_0(void)
+void test_GPIO_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_0(void)
 
 {
 
@@ -99,7 +99,7 @@ void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_0(void)
 
 
 
-    Gpio_ClearPin(0U);
+    GPIO_ClearPin(0U);
 
 
 
@@ -109,7 +109,7 @@ void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_0(void)
 
 
 
-void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_1(void)
+void test_GPIO_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_1(void)
 
 {
 
@@ -117,7 +117,7 @@ void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_1(void)
 
 
 
-    Gpio_ClearPin(1U);
+    GPIO_ClearPin(1U);
 
 
 
@@ -127,7 +127,7 @@ void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_1(void)
 
 
 
-void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_7(void)
+void test_GPIO_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_7(void)
 
 {
 
@@ -135,7 +135,7 @@ void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_7(void)
 
 
 
-    Gpio_ClearPin(7U);
+    GPIO_ClearPin(7U);
 
 
 
@@ -145,13 +145,13 @@ void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_7(void)
 
 
 
-void test_Gpio_ClearPin_should_do_nothing_if_pin_number_is_greater_than_7()
+void test_GPIO_ClearPin_should_do_nothing_if_pin_number_is_greater_than_7()
 
 {
 
     PortA = 0xFF;
 
-    Gpio_ClearPin(8U);
+    GPIO_ClearPin(8U);
 
     UnityAssertEqualNumber((_U_SINT)((0xFF)), (_U_SINT)((PortA)), (((void *)0)), (_U_UINT)80, UNITY_DISPLAY_STYLE_INT);
 

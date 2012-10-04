@@ -25,7 +25,7 @@ void test_LedControl_TurnLedOn_should_turn_on_GPIO_pin_1_when_turning_on_the_red
 
 
 
-    Gpio_SetPin_CMockExpect(16, 1U);
+    GPIO_SetPin_CMockExpect(16, 1U);
 
 
 
@@ -43,7 +43,7 @@ void test_LedControl_TurnLedOn_should_turn_on_GPIO_pin_2_when_turning_on_the_blu
 
 
 
-    Gpio_SetPin_CMockExpect(25, 2U);
+    GPIO_SetPin_CMockExpect(25, 2U);
 
 
 
@@ -61,7 +61,7 @@ void test_LedControl_TurnLedOff_should_turn_off_GPIO_pin_1_when_turning_off_the_
 
 
 
-    Gpio_ClearPin_CMockExpect(34, 1U);
+    GPIO_ClearPin_CMockExpect(34, 1U);
 
 
 
@@ -79,7 +79,7 @@ void test_LedControl_TurnLedOff_should_turn_off_GPIO_pin_2_when_turning_off_the_
 
 
 
-    Gpio_ClearPin_CMockExpect(43, 2U);
+    GPIO_ClearPin_CMockExpect(43, 2U);
 
 
 

@@ -30,14 +30,14 @@ char* GlobalOrderError;
 //=======External Functions This Runner Calls=====
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_0(void);
-extern void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_1(void);
-extern void test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_7(void);
-extern void test_Gpio_SetPin_should_do_nothing_if_pin_number_is_greater_than_7(void);
-extern void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_0(void);
-extern void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_1(void);
-extern void test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_7(void);
-extern void test_Gpio_ClearPin_should_do_nothing_if_pin_number_is_greater_than_7(void);
+extern void test_GPIO_SetPin_should_set_the_correct_bit_in_PortA_for_pin_0(void);
+extern void test_GPIO_SetPin_should_set_the_correct_bit_in_PortA_for_pin_1(void);
+extern void test_GPIO_SetPin_should_set_the_correct_bit_in_PortA_for_pin_7(void);
+extern void test_GPIO_SetPin_should_do_nothing_if_pin_number_is_greater_than_7(void);
+extern void test_GPIO_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_0(void);
+extern void test_GPIO_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_1(void);
+extern void test_GPIO_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_7(void);
+extern void test_GPIO_ClearPin_should_do_nothing_if_pin_number_is_greater_than_7(void);
 
 
 //=======Test Reset Option=====
@@ -53,14 +53,14 @@ int main(void)
 {
   Unity.TestFile = "test_Gpio.c";
   UnityBegin();
-  RUN_TEST(test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_0, 15);
-  RUN_TEST(test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_1, 24);
-  RUN_TEST(test_Gpio_SetPin_should_set_the_correct_bit_in_PortA_for_pin_7, 33);
-  RUN_TEST(test_Gpio_SetPin_should_do_nothing_if_pin_number_is_greater_than_7, 42);
-  RUN_TEST(test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_0, 49);
-  RUN_TEST(test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_1, 58);
-  RUN_TEST(test_Gpio_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_7, 67);
-  RUN_TEST(test_Gpio_ClearPin_should_do_nothing_if_pin_number_is_greater_than_7, 76);
+  RUN_TEST(test_GPIO_SetPin_should_set_the_correct_bit_in_PortA_for_pin_0, 15);
+  RUN_TEST(test_GPIO_SetPin_should_set_the_correct_bit_in_PortA_for_pin_1, 24);
+  RUN_TEST(test_GPIO_SetPin_should_set_the_correct_bit_in_PortA_for_pin_7, 33);
+  RUN_TEST(test_GPIO_SetPin_should_do_nothing_if_pin_number_is_greater_than_7, 42);
+  RUN_TEST(test_GPIO_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_0, 49);
+  RUN_TEST(test_GPIO_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_1, 58);
+  RUN_TEST(test_GPIO_ClearPin_should_clear_the_correct_bit_in_PortA_for_pin_7, 67);
+  RUN_TEST(test_GPIO_ClearPin_should_do_nothing_if_pin_number_is_greater_than_7, 76);
 
   return (UnityEnd());
 }

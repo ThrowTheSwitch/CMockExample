@@ -11,13 +11,13 @@ void mock_Gpio_Verify(void);
 
 
 
-#define Gpio_SetPin_Ignore() Gpio_SetPin_CMockIgnore()
-void Gpio_SetPin_CMockIgnore(void);
-#define Gpio_SetPin_Expect(pin_num) Gpio_SetPin_CMockExpect(__LINE__, pin_num)
-void Gpio_SetPin_CMockExpect(UNITY_LINE_TYPE cmock_line, uint8_t pin_num);
-#define Gpio_ClearPin_Ignore() Gpio_ClearPin_CMockIgnore()
-void Gpio_ClearPin_CMockIgnore(void);
-#define Gpio_ClearPin_Expect(pin_num) Gpio_ClearPin_CMockExpect(__LINE__, pin_num)
-void Gpio_ClearPin_CMockExpect(UNITY_LINE_TYPE cmock_line, uint8_t pin_num);
+#define GPIO_SetPin_Ignore() GPIO_SetPin_CMockIgnore()
+void GPIO_SetPin_CMockIgnore(void);
+#define GPIO_SetPin_Expect(pin_num) GPIO_SetPin_CMockExpect(__LINE__, pin_num)
+void GPIO_SetPin_CMockExpect(UNITY_LINE_TYPE cmock_line, uint8_t pin_num);
+#define GPIO_ClearPin_Ignore() GPIO_ClearPin_CMockIgnore()
+void GPIO_ClearPin_CMockIgnore(void);
+#define GPIO_ClearPin_Expect(pin_num) GPIO_ClearPin_CMockExpect(__LINE__, pin_num)
+void GPIO_ClearPin_CMockExpect(UNITY_LINE_TYPE cmock_line, uint8_t pin_num);
 
 #endif

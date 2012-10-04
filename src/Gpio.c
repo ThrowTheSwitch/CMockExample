@@ -8,7 +8,7 @@
 #endif
 
 
-void Gpio_SetPin(uint8_t pin_num)
+void GPIO_SetPin(uint8_t pin_num)
 {
     // Validate the input
     if(pin_num > 7) return;
@@ -16,7 +16,7 @@ void Gpio_SetPin(uint8_t pin_num)
     PortA |= (1 << pin_num);
 }
 
-void Gpio_ClearPin(uint8_t pin_num)
+void GPIO_ClearPin(uint8_t pin_num)
 {
     // Validate the input
     if(pin_num > 7) return;

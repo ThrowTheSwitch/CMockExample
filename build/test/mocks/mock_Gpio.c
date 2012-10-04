@@ -6,28 +6,28 @@
 #include "cmock.h"
 #include "mock_Gpio.h"
 
-typedef struct _CMOCK_Gpio_SetPin_CALL_INSTANCE
+typedef struct _CMOCK_GPIO_SetPin_CALL_INSTANCE
 {
   UNITY_LINE_TYPE LineNumber;
   int CallOrder;
   uint8_t Expected_pin_num;
 
-} CMOCK_Gpio_SetPin_CALL_INSTANCE;
+} CMOCK_GPIO_SetPin_CALL_INSTANCE;
 
-typedef struct _CMOCK_Gpio_ClearPin_CALL_INSTANCE
+typedef struct _CMOCK_GPIO_ClearPin_CALL_INSTANCE
 {
   UNITY_LINE_TYPE LineNumber;
   int CallOrder;
   uint8_t Expected_pin_num;
 
-} CMOCK_Gpio_ClearPin_CALL_INSTANCE;
+} CMOCK_GPIO_ClearPin_CALL_INSTANCE;
 
 static struct mock_GpioInstance
 {
-  int Gpio_SetPin_IgnoreBool;
-  CMOCK_MEM_INDEX_TYPE Gpio_SetPin_CallInstance;
-  int Gpio_ClearPin_IgnoreBool;
-  CMOCK_MEM_INDEX_TYPE Gpio_ClearPin_CallInstance;
+  int GPIO_SetPin_IgnoreBool;
+  CMOCK_MEM_INDEX_TYPE GPIO_SetPin_CallInstance;
+  int GPIO_ClearPin_IgnoreBool;
+  CMOCK_MEM_INDEX_TYPE GPIO_ClearPin_CallInstance;
 } Mock;
 
 extern jmp_buf AbortFrame;
@@ -37,12 +37,12 @@ extern int GlobalVerifyOrder;
 void mock_Gpio_Verify(void)
 {
   UNITY_LINE_TYPE cmock_line = TEST_LINE_NUM;
-  if (Mock.Gpio_SetPin_IgnoreBool)
-    Mock.Gpio_SetPin_CallInstance = CMOCK_GUTS_NONE;
-  UNITY_TEST_ASSERT(CMOCK_GUTS_NONE == Mock.Gpio_SetPin_CallInstance, cmock_line, "Function 'Gpio_SetPin' called less times than expected.");
-  if (Mock.Gpio_ClearPin_IgnoreBool)
-    Mock.Gpio_ClearPin_CallInstance = CMOCK_GUTS_NONE;
-  UNITY_TEST_ASSERT(CMOCK_GUTS_NONE == Mock.Gpio_ClearPin_CallInstance, cmock_line, "Function 'Gpio_ClearPin' called less times than expected.");
+  if (Mock.GPIO_SetPin_IgnoreBool)
+    Mock.GPIO_SetPin_CallInstance = CMOCK_GUTS_NONE;
+  UNITY_TEST_ASSERT(CMOCK_GUTS_NONE == Mock.GPIO_SetPin_CallInstance, cmock_line, "Function 'GPIO_SetPin' called less times than expected.");
+  if (Mock.GPIO_ClearPin_IgnoreBool)
+    Mock.GPIO_ClearPin_CallInstance = CMOCK_GUTS_NONE;
+  UNITY_TEST_ASSERT(CMOCK_GUTS_NONE == Mock.GPIO_ClearPin_CallInstance, cmock_line, "Function 'GPIO_ClearPin' called less times than expected.");
 }
 
 void mock_Gpio_Init(void)
@@ -58,81 +58,81 @@ void mock_Gpio_Destroy(void)
   GlobalVerifyOrder = 0;
 }
 
-void Gpio_SetPin(uint8_t pin_num)
+void GPIO_SetPin(uint8_t pin_num)
 {
   UNITY_LINE_TYPE cmock_line = TEST_LINE_NUM;
-  CMOCK_Gpio_SetPin_CALL_INSTANCE* cmock_call_instance = (CMOCK_Gpio_SetPin_CALL_INSTANCE*)CMock_Guts_GetAddressFor(Mock.Gpio_SetPin_CallInstance);
-  Mock.Gpio_SetPin_CallInstance = CMock_Guts_MemNext(Mock.Gpio_SetPin_CallInstance);
-  if (Mock.Gpio_SetPin_IgnoreBool)
+  CMOCK_GPIO_SetPin_CALL_INSTANCE* cmock_call_instance = (CMOCK_GPIO_SetPin_CALL_INSTANCE*)CMock_Guts_GetAddressFor(Mock.GPIO_SetPin_CallInstance);
+  Mock.GPIO_SetPin_CallInstance = CMock_Guts_MemNext(Mock.GPIO_SetPin_CallInstance);
+  if (Mock.GPIO_SetPin_IgnoreBool)
   {
     return;
   }
-  UNITY_TEST_ASSERT_NOT_NULL(cmock_call_instance, cmock_line, "Function 'Gpio_SetPin' called more times than expected.");
+  UNITY_TEST_ASSERT_NOT_NULL(cmock_call_instance, cmock_line, "Function 'GPIO_SetPin' called more times than expected.");
   cmock_line = cmock_call_instance->LineNumber;
   if (cmock_call_instance->CallOrder > ++GlobalVerifyOrder)
-    UNITY_TEST_FAIL(cmock_line, "Function 'Gpio_SetPin' called earlier than expected.");
+    UNITY_TEST_FAIL(cmock_line, "Function 'GPIO_SetPin' called earlier than expected.");
   if (cmock_call_instance->CallOrder < GlobalVerifyOrder)
-    UNITY_TEST_FAIL(cmock_line, "Function 'Gpio_SetPin' called later than expected.");
-  UNITY_TEST_ASSERT_EQUAL_HEX8(cmock_call_instance->Expected_pin_num, pin_num, cmock_line, "Function 'Gpio_SetPin' called with unexpected value for argument 'pin_num'.");
+    UNITY_TEST_FAIL(cmock_line, "Function 'GPIO_SetPin' called later than expected.");
+  UNITY_TEST_ASSERT_EQUAL_HEX8(cmock_call_instance->Expected_pin_num, pin_num, cmock_line, "Function 'GPIO_SetPin' called with unexpected value for argument 'pin_num'.");
 }
 
-void CMockExpectParameters_Gpio_SetPin(CMOCK_Gpio_SetPin_CALL_INSTANCE* cmock_call_instance, uint8_t pin_num)
+void CMockExpectParameters_GPIO_SetPin(CMOCK_GPIO_SetPin_CALL_INSTANCE* cmock_call_instance, uint8_t pin_num)
 {
   cmock_call_instance->Expected_pin_num = pin_num;
 }
 
-void Gpio_SetPin_CMockIgnore(void)
+void GPIO_SetPin_CMockIgnore(void)
 {
-  Mock.Gpio_SetPin_IgnoreBool = (int)1;
+  Mock.GPIO_SetPin_IgnoreBool = (int)1;
 }
 
-void Gpio_SetPin_CMockExpect(UNITY_LINE_TYPE cmock_line, uint8_t pin_num)
+void GPIO_SetPin_CMockExpect(UNITY_LINE_TYPE cmock_line, uint8_t pin_num)
 {
-  CMOCK_MEM_INDEX_TYPE cmock_guts_index = CMock_Guts_MemNew(sizeof(CMOCK_Gpio_SetPin_CALL_INSTANCE));
-  CMOCK_Gpio_SetPin_CALL_INSTANCE* cmock_call_instance = (CMOCK_Gpio_SetPin_CALL_INSTANCE*)CMock_Guts_GetAddressFor(cmock_guts_index);
+  CMOCK_MEM_INDEX_TYPE cmock_guts_index = CMock_Guts_MemNew(sizeof(CMOCK_GPIO_SetPin_CALL_INSTANCE));
+  CMOCK_GPIO_SetPin_CALL_INSTANCE* cmock_call_instance = (CMOCK_GPIO_SetPin_CALL_INSTANCE*)CMock_Guts_GetAddressFor(cmock_guts_index);
   UNITY_TEST_ASSERT_NOT_NULL(cmock_call_instance, cmock_line, "CMock has run out of memory. Please allocate more.");
-  Mock.Gpio_SetPin_CallInstance = CMock_Guts_MemChain(Mock.Gpio_SetPin_CallInstance, cmock_guts_index);
+  Mock.GPIO_SetPin_CallInstance = CMock_Guts_MemChain(Mock.GPIO_SetPin_CallInstance, cmock_guts_index);
   cmock_call_instance->LineNumber = cmock_line;
   cmock_call_instance->CallOrder = ++GlobalExpectCount;
-  CMockExpectParameters_Gpio_SetPin(cmock_call_instance, pin_num);
+  CMockExpectParameters_GPIO_SetPin(cmock_call_instance, pin_num);
 }
 
-void Gpio_ClearPin(uint8_t pin_num)
+void GPIO_ClearPin(uint8_t pin_num)
 {
   UNITY_LINE_TYPE cmock_line = TEST_LINE_NUM;
-  CMOCK_Gpio_ClearPin_CALL_INSTANCE* cmock_call_instance = (CMOCK_Gpio_ClearPin_CALL_INSTANCE*)CMock_Guts_GetAddressFor(Mock.Gpio_ClearPin_CallInstance);
-  Mock.Gpio_ClearPin_CallInstance = CMock_Guts_MemNext(Mock.Gpio_ClearPin_CallInstance);
-  if (Mock.Gpio_ClearPin_IgnoreBool)
+  CMOCK_GPIO_ClearPin_CALL_INSTANCE* cmock_call_instance = (CMOCK_GPIO_ClearPin_CALL_INSTANCE*)CMock_Guts_GetAddressFor(Mock.GPIO_ClearPin_CallInstance);
+  Mock.GPIO_ClearPin_CallInstance = CMock_Guts_MemNext(Mock.GPIO_ClearPin_CallInstance);
+  if (Mock.GPIO_ClearPin_IgnoreBool)
   {
     return;
   }
-  UNITY_TEST_ASSERT_NOT_NULL(cmock_call_instance, cmock_line, "Function 'Gpio_ClearPin' called more times than expected.");
+  UNITY_TEST_ASSERT_NOT_NULL(cmock_call_instance, cmock_line, "Function 'GPIO_ClearPin' called more times than expected.");
   cmock_line = cmock_call_instance->LineNumber;
   if (cmock_call_instance->CallOrder > ++GlobalVerifyOrder)
-    UNITY_TEST_FAIL(cmock_line, "Function 'Gpio_ClearPin' called earlier than expected.");
+    UNITY_TEST_FAIL(cmock_line, "Function 'GPIO_ClearPin' called earlier than expected.");
   if (cmock_call_instance->CallOrder < GlobalVerifyOrder)
-    UNITY_TEST_FAIL(cmock_line, "Function 'Gpio_ClearPin' called later than expected.");
-  UNITY_TEST_ASSERT_EQUAL_HEX8(cmock_call_instance->Expected_pin_num, pin_num, cmock_line, "Function 'Gpio_ClearPin' called with unexpected value for argument 'pin_num'.");
+    UNITY_TEST_FAIL(cmock_line, "Function 'GPIO_ClearPin' called later than expected.");
+  UNITY_TEST_ASSERT_EQUAL_HEX8(cmock_call_instance->Expected_pin_num, pin_num, cmock_line, "Function 'GPIO_ClearPin' called with unexpected value for argument 'pin_num'.");
 }
 
-void CMockExpectParameters_Gpio_ClearPin(CMOCK_Gpio_ClearPin_CALL_INSTANCE* cmock_call_instance, uint8_t pin_num)
+void CMockExpectParameters_GPIO_ClearPin(CMOCK_GPIO_ClearPin_CALL_INSTANCE* cmock_call_instance, uint8_t pin_num)
 {
   cmock_call_instance->Expected_pin_num = pin_num;
 }
 
-void Gpio_ClearPin_CMockIgnore(void)
+void GPIO_ClearPin_CMockIgnore(void)
 {
-  Mock.Gpio_ClearPin_IgnoreBool = (int)1;
+  Mock.GPIO_ClearPin_IgnoreBool = (int)1;
 }
 
-void Gpio_ClearPin_CMockExpect(UNITY_LINE_TYPE cmock_line, uint8_t pin_num)
+void GPIO_ClearPin_CMockExpect(UNITY_LINE_TYPE cmock_line, uint8_t pin_num)
 {
-  CMOCK_MEM_INDEX_TYPE cmock_guts_index = CMock_Guts_MemNew(sizeof(CMOCK_Gpio_ClearPin_CALL_INSTANCE));
-  CMOCK_Gpio_ClearPin_CALL_INSTANCE* cmock_call_instance = (CMOCK_Gpio_ClearPin_CALL_INSTANCE*)CMock_Guts_GetAddressFor(cmock_guts_index);
+  CMOCK_MEM_INDEX_TYPE cmock_guts_index = CMock_Guts_MemNew(sizeof(CMOCK_GPIO_ClearPin_CALL_INSTANCE));
+  CMOCK_GPIO_ClearPin_CALL_INSTANCE* cmock_call_instance = (CMOCK_GPIO_ClearPin_CALL_INSTANCE*)CMock_Guts_GetAddressFor(cmock_guts_index);
   UNITY_TEST_ASSERT_NOT_NULL(cmock_call_instance, cmock_line, "CMock has run out of memory. Please allocate more.");
-  Mock.Gpio_ClearPin_CallInstance = CMock_Guts_MemChain(Mock.Gpio_ClearPin_CallInstance, cmock_guts_index);
+  Mock.GPIO_ClearPin_CallInstance = CMock_Guts_MemChain(Mock.GPIO_ClearPin_CallInstance, cmock_guts_index);
   cmock_call_instance->LineNumber = cmock_line;
   cmock_call_instance->CallOrder = ++GlobalExpectCount;
-  CMockExpectParameters_Gpio_ClearPin(cmock_call_instance, pin_num);
+  CMockExpectParameters_GPIO_ClearPin(cmock_call_instance, pin_num);
 }
 

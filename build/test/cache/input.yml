@@ -35,10 +35,10 @@
 - :rake_columns: '120'
 :defines:
   :test:
-  - &70286360917080 []
+  - &70170723694380 []
   - TEST
   :test_preprocess:
-  - *70286360917080
+  - *70170723694380
   - TEST
   :release: []
   :release_preprocess: []
